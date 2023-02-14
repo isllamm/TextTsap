@@ -9,5 +9,14 @@
         android:id="@+id/homeFragment"
         android:name="com.isllam.texttsap.ui.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_selectAppSheetFragment"
+            app:destination="@id/selectAppSheetFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/selectAppSheetFragment"
+        android:name="com.isllam.texttsap.ui.fragments.SelectAppSheetFragment"
+        android:label="fragment_select_app_sheet"
+        tools:layout="@layout/fragment_select_app_sheet" />
 </navigation>
