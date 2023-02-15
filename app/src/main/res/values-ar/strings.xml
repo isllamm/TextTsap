@@ -3,4 +3,6 @@
     <string name="your_message">الرسالة</string>
     <string name="send">إرسال</string>
     <string name="phone_number">رقم الهاتف</string>
+    <string name="app_not_installed">الابلكيشن غير موجود</string>
+
 </resources>
