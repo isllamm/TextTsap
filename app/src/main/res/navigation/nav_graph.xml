@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_selectAppSheetFragment"
-            app:destination="@id/selectAppSheetFragment" />
+            app:destination="@id/selectAppSheetFragment"
+            app:popEnterAnim="@anim/enter_from_down"
+            app:popExitAnim="@anim/exit_from_up" />
     </fragment>
     <dialog
         android:id="@+id/selectAppSheetFragment"

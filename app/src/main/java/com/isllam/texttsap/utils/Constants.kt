@@ -4,6 +4,7 @@ object Constants {
     const val LANG = "lang"
     const val EN = "en"
     const val AR = "ar"
-
+    const val PHONE="phone"
+    const val MESSAGE = "message"
 
 }

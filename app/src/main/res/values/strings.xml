@@ -5,4 +5,7 @@
     <string name="send">Send</string>
     <string name="phone_number">Phone Number</string>
     <string name="app_not_installed">app not installed</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="whatsapp_business">Whatsapp Business</string>
+    <string name="telegram">Telegram</string>
 </resources>
