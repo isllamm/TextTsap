@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun getLaunchIntent(phoneNumber: String, message: String, business: Boolean): Intent {
+     fun getLaunchIntent(phoneNumber: String, message: String, business: Boolean): Intent {
 
         val total = "https://api.whatsapp.com/send?phone=" +
                 phoneNumber.replace("+", "") + "&text=${message}"

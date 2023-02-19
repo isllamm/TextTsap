@@ -6,5 +6,7 @@ object Constants {
     const val AR = "ar"
     const val PHONE="phone"
     const val MESSAGE = "message"
+    const val IS_BUSINESS = "IS_BUSINESS"
+
 
 }

@@ -13,6 +13,8 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.isllam.texttsap.R
 import com.isllam.texttsap.databinding.FragmentSelectAppSheetBinding
 import com.isllam.texttsap.ui.MainActivity
+import com.isllam.texttsap.utils.Constants
+import kotlin.properties.Delegates
 
 
 class SelectAppSheetFragment : BottomSheetDialogFragment() {
@@ -20,7 +22,9 @@ class SelectAppSheetFragment : BottomSheetDialogFragment() {
 
     private lateinit var binding: FragmentSelectAppSheetBinding
     private lateinit var parent: MainActivity
-
+    private var message by Delegates.notNull<String>()
+    private var number by Delegates.notNull<String>()
+    private var isBusiness by Delegates.notNull<Int>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,6 +32,7 @@ class SelectAppSheetFragment : BottomSheetDialogFragment() {
     ): View {
         binding = FragmentSelectAppSheetBinding.inflate(inflater)
         parent = requireActivity() as MainActivity
+        message = requireContext().getString(Constants.MESSAGE)
         onClick()
 
         return binding.root
